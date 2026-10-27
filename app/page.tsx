@@ -12,7 +12,7 @@ import GoalsView from "@/components/views/GoalsView";
 import { ViewName } from "@/lib/types";
 
 export default function Home() {
-  const [active, setActive] = useState<ViewName>("today");
+  const [active, setActive] = useState<ViewName>("calendar");
   const [isLight, setIsLight] = useState(false);
 
   const toggleTheme = () => {

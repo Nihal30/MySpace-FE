@@ -29,7 +29,7 @@ export default function Sidebar({ active, onChange, onToggleTheme, isLight }: Pr
 
       <button
         onClick={() => onChange("calendar")}
-        className={`flex items-center gap-2.5 px-2.5 py-2.5 rounded-lg border text-left ${
+        className={`flex items-center gap-2.5 px-2.5 py-2.5 mt-2 rounded-lg border text-left ${
           active === "calendar" ? "border-moss bg-moss-dim" : "border-border bg-surface hover:border-text-faint"
         }`}
       >
