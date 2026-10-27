@@ -1,8 +1,8 @@
-# Daybook — Frontend (Next.js 14, App Router, TypeScript, Tailwind)
+# MySpace — Frontend (Next.js 14, App Router, TypeScript, Tailwind)
 
 ## Setup
 ```bash
-npx create-next-app@latest daybook --typescript --tailwind --app --src-dir=false --import-alias "@/*"
+npx create-next-app@latest myspace --typescript --tailwind --app --src-dir=false --import-alias "@/*"
 # then copy these files into the generated project, overwriting the defaults:
 #   app/, components/, lib/, tailwind.config.ts, app/globals.css
 npm install
