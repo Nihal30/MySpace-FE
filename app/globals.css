@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #14181c;
+  --surface: #1b2126;
+  --surface-2: #212830;
+  --border: #2a3138;
+  --text: #e9e4da;
+  --text-dim: #9aa3ab;
+  --text-faint: #626b72;
+  --moss: #6e9c6b;
+  --moss-dim: #3e4f3d;
+  --rust: #b7663e;
+  --rust-dim: #4a342b;
+}
+
+:root[data-theme="light"] {
+  --bg: #efeae0;
+  --surface: #f7f4ee;
+  --surface-2: #fcfaf6;
+  --border: #dcd5c6;
+  --text: #23262a;
+  --text-dim: #5b5e62;
+  --text-faint: #8b8d8f;
+  --moss: #4c7649;
+  --moss-dim: #c9dbc5;
+  --rust: #a6532e;
+  --rust-dim: #e8d3c6;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* streak connector helper — used with Tailwind arbitrary classes in CalendarGrid */
+.streak-link-left::before,
+.streak-link-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 4px;
+  background: var(--moss);
+  transform: translateY(-50%);
+}
+.streak-link-left::before {
+  left: -8px;
+}
+.streak-link-right::after {
+  right: -8px;
+}
